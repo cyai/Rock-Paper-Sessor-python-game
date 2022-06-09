@@ -24,7 +24,7 @@ def gamewin(comp, you):
             return False
     
 
-print("Computers turn ROCK(r) PAPAER(p) or SISSORS(s)")
+print("Computers turn ROCK(r) PAPAER(p) or SESSIORS(s)")
 comp_turn = random.randint(1,3)
 if comp_turn == 1:
     comp = 'r'
@@ -34,12 +34,12 @@ else:
     comp = 's'
 
 
-you = input("Your turn  ROCK(r) PAPAER(p) or SISSORS(s)?? ")
+you = input("Your turn  ROCK(r) PAPAER(p) or SESSIORS(s)?? ")
 if you == 'r' or you == 's' or you == 'p':
     a = gamewin(comp, you)
 
     print(f"Computer choosed {comp}")
-    print(f"YOu choosed {you}")
+    print(f"You choosed {you}")
 
     if a == None:
         print("Game TIE!!!")
